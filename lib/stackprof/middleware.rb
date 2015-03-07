@@ -30,7 +30,7 @@ module StackProf
     end
 
     class << self
-      attr_accessor :enabled, :mode, :interval, :path
+      attr_accessor :enabled, :mode, :interval, :path, :raw
 
       def enabled?(env)
         if enabled.respond_to?(:call)
